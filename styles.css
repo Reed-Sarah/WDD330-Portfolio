@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Noticia+Text:wght@700&display=swap');
+
+body {
+    background-color: #07BEB8;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Noticia Text', serif;
+    margin: 5% 0 0 5%;
+    font-size: 2.5em;
+}
+
+h1::after, h1::before {
+    content: "";
+    position: absolute;
+    top: -2em;
+    width: 0;
+    height: 0;  
+}
+
+h1::after {
+    left: 56vw; 
+    border-top: 44vw solid #FFA69E;
+    border-left: 44vw solid transparent;
+}
+
+h1::before {
+    left: 55vw;
+    border-top: 45vw solid white;
+    border-left: 45vw solid transparent;
+    
+}
+
+ol {
+    font-family: 'Cuprum', sans-serif;
+    list-style-type: none;
+    font-size: 150%;
+    margin-left: 5%;
+}
+
+li {
+  padding: .15em;  
+}
+
+a {
+    color: white;
+}
