@@ -2,14 +2,19 @@
 
 body {
     background-color: #07BEB8;
-    color: white;
+    color:  #364652;
     margin: 0;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Noticia Text', serif;
-    margin: 5% 0 0 5%;
+    margin-left: 5%;
+    
+}
+
+h1{
     font-size: 2.5em;
+    margin-top: 5%;
 }
 
 h1::after, h1::before {
@@ -30,20 +35,35 @@ h1::before {
     left: 55vw;
     border-top: 45vw solid white;
     border-left: 45vw solid transparent;
-    
 }
 
-ol {
+ol, p, h4, ul{
     font-family: 'Cuprum', sans-serif;
-    list-style-type: none;
     font-size: 150%;
     margin-left: 5%;
 }
 
+h4 {
+    font-size: 125%;
+}
+
+ol {
+    list-style-type: none;
+}
+
 li {
   padding: .15em;  
+  
 }
 
 a {
+    color:  #364652;
+}
+
+a:hover {
     color: white;
+}
+
+.firstParagraph {
+    margin-right: 20%;
 }
