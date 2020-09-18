@@ -4,7 +4,9 @@ body {
     background-color: #07BEB8;
     color:  #364652;
     margin: 0;
+    overflow-x: hidden;
 }
+
 
 h1, h2, h3 {
     font-family: 'Noticia Text', serif;
@@ -23,6 +25,7 @@ h1::after, h1::before {
     top: -2em;
     width: 0;
     height: 0;  
+    
 }
 
 h1::after {
