@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W330 Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/notes.css">
+</head>
+<body>
+  <h1>WDD 330 - Portfolio</h1>
+  <h2>Week 2 - Notes</h2>
+  <h4>The Basics</h4>
+  <p class="firstParagraph">
+    JavaScript will automatically add semi colons to the ends of lines, but don’t rely on it because it is error prone.<br><br>
+    Primitive data types:</p>
+    <ul>
+      <li>String</li>
+      <li>Symbol</li>
+      <li>Number</li>
+      <li>Boolean</li>
+      <li>Undefined</li>
+      <li>Null</li>
+    </ul>
+    
+  
+    <p>To define variable use const if it will not change, use let if it might be reassigned later<br><br>
+    You can use comma when declaring variables i.e let x = 3, y = 4, z = 5;<br><br>
+    Using const on array etc will not make it immutable<br><br>
+    Var is replaced by let which has block scope<br><br>
+    Block scope – only exists to the end of the curly brace<br><br>
+    Avoid global variables<br><br>
+    Variables declared without const or let are global<br><br>
+    JavaScript prefers camelCase<br><br>
+    Non-primitive values are passed by reference<br><br>
+    JavaScript uses both double and single quotes for strings<br><br>
+    Dot notation i.e name.length; and square brackets i.e name['length']; can both be used dot notion is usually preferable<br><br>
+    Properties are not followed by parathesis like methods are<br><br>
+    Use ` for javaScript interpolation i.e `Hello ${ name }!`;<br><br>
+     ` are commonly used for all strings because of interpolation’s usefulness<br><br>
+    javaScript just uses number not float or int <br><br>
+    scientific Notation – 1e6 or 1E6<br><br>
+    To keep the computer from confusing a dot nation with a decimal when using a number you can:</p>
+    <ul>
+        <li>use two dots</li>
+        <li>add a space</li>
+        <li> write all numbers as a decimal</li>
+        <li>put number in parenthesis</li>
+        <li>assign number to a constant</li>
+    </ul>
+    <p>js uses ** as power operator<br><br>
+    NaN = Not a Number<br><br>
+    Avoid using Type Coercion which happens when trying to operate on variables of different types<br><br>
+    Number(“23”) will convert the sting form of 23 to a number, there is also an equivalent string function or you can use toString() for strings<br><br>
+    Null = No Value coerced to 0, undefined = can’t find value, coerced to NaN<br><br>
+    Falsy Values:</p>
+    <ul>
+        <li>Empty strings</li>
+        <li>0</li>
+        <li>-0</li>
+        <li>NaN</li>
+        <li>False</li>
+        <li>Null</li>
+        <li>Undefined</li>
+    </ul>
+    
+    
+    <p>Use !! to know it is true or false<br><br>
+    Use == for soft equality (equal but could be different data types), use === for hard equality (equal and same data type <br><br>
+    Using === and !== is preferred no error by type coercion <br><br></p>
+
+    <h4>Arrays</h4>
+    <p>Array is js are dynamic<br><br>
+    Arrays can contain mixed data types<br><br>
+    Use delete operator to remove values from arrays, leaves behind undefined<br><br>
+    Destructuring allows for multiple assignments at the same time i.e const [x,y] = [1,2];<br><br>
+    pop() returns last element of the array and removes it<br><br>
+    shift() returns first element and removes it<br><br>
+    push() adds element to the end <br><br>
+    unshift() adds element to the beginning<br><br>
+    concat() merges arrays<br><br>
+    spread operator … can also be used to merge arrays or flatten multidimensional arrays<br><br>
+    join() returns comma separated string of the array<br><br>
+    slice() creates a subarray leaving original intact i.e avengers.slice(2,4)<br><br>
+    splice() can we used to replace values with new values or can add new sections in takes in there parameters the first is the index the second tell how many items to remove and the third is the addition to add it returns the deleted sections as a sub string. Use can use splice to remove elements without leaving behind undefined<br><br>
+    resverse() reverse the order<br><br>
+    sort() sorts alphabetically by default<br><br>
+    indexof() return index of the first occurs of the parameter passed in or -1 if not in the array <br><br>
+    includes() returns Boolean if array contain parameter or not<br><br></p>
+    
+    <h4>Sets</h4>
+    <p>sets can only be created i.e const list = new Set();<br><br>
+    add() adds elements to a set<br><br>
+    sets cannot contain duplicates, thus can be used to eliminate duplicates in an array<br><br>
+    size() finds number of values<br><br>
+    has() used to check if set contains a value returns Boolean more efficient then Includes() or indexOf()<br><br>
+    sets don’t have indices<br><br>
+    delete() can be used on set returns true or false if it was deleted or not<br><br>
+    clear() removes all values from the set<br><br>
+    can use spread operator to convert set to array or from()<br><br>
+    JS uses maps similar to dictionaries<br><br></p>
+
+    <h4>Maps</h4>
+    <p>Must use constructor i.e const romanNumerals = new Map(); to create map<br><br>
+    Set() is used to add key and value to map<br><br>
+    Get() used to look up a value<br><br>
+    Has() used to see if a key is in the map<br><br>
+    Delete() and clear() can also be used with maps<br><br></p>
+
+<h4>Loops</h4>
+    <p>Ternary Oppeator = shorthand to if else statements, condition ? (//code to run if condition is true) : (//code to run if condition is false)<br><br>
+    JS uses switch statements <br><br>
+    JS has do while loops<br><br>
+    JS has for of loops i.e for(const value of avengers) to easily loop through arrays, maps, sets. NOT weak maps or sets<br><br></p>
+
+    <h4>Functions</h4>
+    <p>Function expression - function has no name, just assigned to a variable followed by ;<br><br>
+    DRY – Don’t repeat yourself which is why we use functions<br><br>
+    Parameters are set when function is defined, when function is invoked it is given arguments<br><br>
+    If you invoke a function without provided arguments they will be undefined<br><br>
+    Functions can have a variable about of arguments given special built in variable arguments <br><br>
+    Rest operator – to use put three dots in front of the last parameter in the function declaration this will collect all parameters into an array called args<br><br>
+    Default parameters can be given in the function declaration i.e function discount(price, amount=10)<br><br>
+    Arrow Syntax for declaring functions i.e const square = x => x*x; if there is multiple parameters or no parameters it must have parentheses. Brackets are use if body is more than one line <br><br>
+    Hoisting moves variables and functions to the top of the current scope<br><br></p>
+    <h4>Callback</h4>
+    <p>Callback = functions passed as an argument to another function is known as a callback<br><br>
+    forEach() can be used to loop through arrays and call a callback on each element<br><br>
+    map() similar to forEach() but returns new array with the new values<br><br>
+    reduce() iterates over an array and uses a callback to determines how to reduce each element into one <br><br>
+    filter() returns array that callback returned true on<br><br>
+    
+    </p>
+  <h2>Week 1 - Questions</h2>
+    <p> Why is 0 different then -0 in JavaScript? Is this ever useful?<br><br>
+        Should we always use splice to remove elements from arrays to avoid undefined?<br><br>
+        What are some real world examples for why you would need weak sets or maps?<br><br>
+        Will there be literal ways to construct maps and set eventually?<br><br>
+ </p>
+ <h2>Week 2 - Exercises</h2>
+    <ul>
+        <li><a href="https://codepen.io/sreednic/pen/VwaRGPM">Reversed Arrays</a></li>
+        <li><a href="https://codepen.io/sreednic/pen/dyMrgPj">Minimum</a></li>
+        <li><a href="https://codepen.io/sreednic/pen/MWyxPbm">Fizz Buzz</a></li>
+    </ul>
+
+</body>
+</html>
