@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W330 Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/notes.css">
+</head>
+<body>
+  <h1>WDD 330 - Portfolio</h1>
+  <h2>Week 3 - Notes</h2>
+  <h4>This</h4>
+  <p>
+      methods can be added to objects by declaring it first then adding to object or by declaring inside object.<br><br>
+      this refers to the object before the dot.<br><br>
+      You can use the same function with different objects<br><br>
+  </p>
+  <h4>Objects</h4>
+  <p>
+javascript objects are more similar to a hash than OOP languages' object<br><br>
+created with curly braces<br><br>
+use in to check if an object has a property use for in to find all objects properties<br><br>
+keys() will return array of keys, values() will do the same for values, entries() for array of both<br><br>
+use delete to remove properties<br><br>
+Objects can contain other objects<br><br>
+Objects are passed by reference<br><br>
+Objects can be passed as a parameter to a function<br><br>
+use objects to prevent repeating names in same scope<br><br>
+JSON.parse() converts Json to JS object stringify() does the reverse, methods are ignored<br><br>
+the Math object has many useful methods and constants<br><br>
+there is a build in Date object, use get methods to return info<br><br>
+  </p>
+<h4>Regular Expression</h4>
+<p>
+RegExp used to search for strings that match ua pattern<br><br>
+use // to write a RegExp<br><br>
+test() returns bool based on if the pattern is in the string<br><br>
+exec() returns first match found<br><br>
+[] represent any one character sequences can use -<br><br>
+^ negates the Expression<br><br>
+other metacharacters and modifiers can be used to refine your search<br><br>
+</p>
+<h4>DOM - Document Object Model</h4>
+  <p>
+DOM - represents an HTML as a network of connected nodes<br><br>
+document - a built in object <br><br>
+Commonly used elements
+<ul>
+    <li>.body</li>
+    <li>.images</li>
+    <li>.links</li>
+    <li>.anchors</li>
+    <li>.forms</li>
+</ul>
+<p>
+getElementsByTagName() returns list of nodes with that tag<br><br>
+querySelector() allows you to use CSS notation to return first element that matches <br><br>
+Finding Value of a node
+</p>
+<ul>
+    <li>.firstChild.nodeValue</li>
+    <li>.textContent</li>
+</ul>
+<p>
+retrieve elements attributes using getAttribute() or dot notation<br><br>
+set them with setAttribute (use ClassList to avoid overwriting other classes)<br><br>
+createTextNode() to create TextNode <br><br>
+appendChild() to add node as chide to node<br><br>
+insertBefore() adds element before element<br><br>
+innerHTML returns all raw HTML can be used to add to the document<br><br>
+use style property to update CSS<br><br>
+  </p>
+  <h4>Event Listener</h4>
+  <p>
+      event listener allows the program continue processing the rest of the code without continually checking for the event<br><br>
+      don't add JavaScript inside the Html its messy like using onclick in tags<br><br>
+      instead use .addEventListener() the first parameter is the event i.e click the second parameter is the function you want to invoke<br><br>
+      target property returns reference to the element that fired the event<br><br>
+      don't use click and double click on the same element it will fire twice<br><br>
+      ScreenX and Y tells pixel location of event on screen<br><br>
+      clientX and Y tell number of pixels being used<br><br>
+      pageX and Y tells pixel location of event in Document<br><br>
+      Possible Events</p>
+      <ul>
+          <li>Click</li>
+        <li>mousedown</li>
+        <li>mouseup</li>
+        <li>dblclick</li>
+        <li>mouseover</li>
+        <li>mouseout</li>
+        <li>keydown</li>
+        <li>keypress</li>
+        <li>keyup</li>
+        <li>touchstart - use cautiously</li>
+        <li>touchend</li>
+        <li>touchmove</li>
+        <li>touchenter</li>
+        <li>touchcancel</li>
+     </ul>   
+        <p>
+        bubbling - bubbles up to parent happens by default<br><br>
+        Capturing - set with third parameter of addEventListener propagates to child<br><br>
+  </p>
+  <h2>Week 3 - Questions</h2>
+  <p>
+      Is there advantages to the way javascript does objects vs Classes?<br><br>
+    why do query Selectors only return first element that match instead of a list?<br><br>
+  </p>
+    
+ <h2>Week 3 - Exercises</h2>
+    <ul>
+        <li><a href="https://jsfiddle.net/sreednic/qvgbyju2/">Calculator</a></li>
+        <li><a href="https://codepen.io/sreednic/pen/abNeoGp">Event Listeners</a></li>
+        <li><a href="https://jsfiddle.net/sreednic/c8Ludn1p/5/">Regular Expression</a></li>
+    </ul>
+
+</body>
+</html>
