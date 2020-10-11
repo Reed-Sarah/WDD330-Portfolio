@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W330 Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/notes.css">
+</head>
+<body>
+  <h1>WDD 330 - Portfolio</h1>
+  <h2>Week 4 - Notes</h2>
+  <h4>Forms</h4>
+  <p>
+  JavaScript can now be used to process form information instead of php<br><br>
+  forms can be accessed i.e const form = document.forms[0]; or i.e const form = document.getElementsByTagname('form')[0]; or i.e const form = document.forms.search; using the name attribute similarly we could use bracket notation<br><br>
+  focus event is when cursor is inside input field<br><br>
+  blur is when user moves focus from form element<br><br>
+  change is when user moves focus from form element and made changes<br><br>
+  reset will reset all fields in the form careful when using as user can easily remove all data entered<br><br>
+  form.action sets the action attribute<br><br>
+submit sends content to the server<br><br> 
+the submit event lister can be used to intercept before its sent to the server<br><br>
+type password on an input will hide entered characters<br><br>
+Javascript should not be uses to replace backend validation but to enhance user experience and cut down on requests<br><br>
+using javacript you can give feedback on form immediately instead of after it is submitted<br><br>
+</p>
+<h4>OOP</h4>
+<p>
+create instance of class with new operator just like java<br><br>
+you can also create class using keyword class with a similar format to java instead of constructor functions<br><br>
+you can call the constructor function with out knowing it's name using .constructor<br><br>
+static methods are called by the class directly rather than instances of the class<br><br>
+prototypal inheritance every class has a prototype property shared by every instance of the class<br><br>
+you can add methods and properties to a class after it has been created using prototype property<br><br>
+if new property or method is added any instance will also inherit the property even if its already created<br><br>
+Never use arrays or objects as a default value in prototypes <br><br>
+getter and setter methods can also be used in js to keep properties private<br><br>
+usually build in methods are non-enumerable and user defined methods are non-enumerable<br><br>
+extends can be used in JS similar to Java<br><br>
+adding functionality to built in objects is called monkey-patching frowned upon in JS<br><br>
+you can create objects form another object that is provided as an argument<br><br>
+Mixins a way of adding methods from one object to another without inheritance<br><br>
+factory function is a function used to create objects<br><br>
+use that = this to keep this from losing its scope in nested functions<br><br>
+you can borrow methods without inheriting all properties and methods using call referencing another objects method<br><br>
+prefer composition over inheritance<br><br>
+module is a self contained piece of code that can be used in other projects kept in a separate file<br><br>
+</p>
+
+  <h2>Week 4 - Questions</h2>
+  <p>Is there any reason to use the constructor function method to make class?<br><br>
+      Is Static functions defined the same way across all programming languages?<br><br>
+      
+Why is prototyping useful?<br><br>
+Are mixins and interfaces used for similar tasks?<br><br>
+  </p>
+    
+ <h2>Week 4 - Exercises</h2>
+    <ul>
+        <li><a href="https://codepen.io/sreednic/pen/vYKOEeQ">Forms</a></li>
+        <li><a href="https://jsfiddle.net/sreednic/7k30ez6r/">Vectors</a></li>
+        
+    </ul>
+
+</body>
+</html>
