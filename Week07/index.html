@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>W330 Portfolio</title>
+<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/notes.css">
+</head>
+<body>
+<h1>WDD 330 - Portfolio</h1>
+<h2>Week 7 - Notes</h2>
+<h4>Functions</h4>
+<p>
+    functions are first class objects<br><br>
+    use call() to set this inside of the function<br><br>
+    memoization - saving the results of expensive computational operations in a cache <br>where they can easily be accessed again<br><br>
+    place parentheses and end of function declaration to immediately invoke, IIFE  <br><br>
+    using IIFE keeps from polluting the global scope, good for initialization code<br><br>
+    functions can rewrite themselves, good for optimization for browsers<br><br>
+    javascript can not have multiple threads, but code can be run asynchronously using callbacks<br><br>
+    promise - represents future results of an asynchronous operation (pending)<br><br>
+    promises are created with a constructor, use then(), and catch() to deal with the outcome<br><br>
+    functions can return functions<br><br>
+    A closure is a reference to a variable that was created inside the scope of another function, but can be used in another part of the program<br><br>
+    A closure is formed when the inner function is returned by the outer function<br><br>
+    pure  functions only preform non-destructive operations, and will always return the same value given the same parameters, they also have no side effects<br><br>
+    high-order functions either accept another function as a parameter or returns another function or both, often use closures<br><br>
+    curried function  is when not all arguments are supplied to the function so it returns another function that retains the arguments already provided<br><br>
+</p>
+
+<h4>Ajax</h4>
+<p>
+    Ajax - asynchronous javascript and XML<br><br>
+    ajax allows page to be dynamic, it enables JS to talk to the server and update content in real time<br><br>
+    XML has mostly been replaced by JSON<br><br>
+    Fetch API uses promises<br><br>
+    json() is used to transform JSON data to JS Objects<br><br>
+    for more control over a request build a request object defining its properties<br><br>
+    headers are used to pass additional information about a request or a response<br><br>
+    formData() take a form as a parameter and serialize it automatically, also allows file uploads<br><br>
+
+
+
+</p>
+<h2>Week 7 - Questions</h2>
+<p>
+  Are curried functions commonly used?<br><br>
+  Why is Javascript soo different from other programing languages?<br><br>
+  Is it better to use JQuery for api fetches so that there is backup support for older browsers?<br><br>
+  How does Authentication play into this api fetch format?<br><br>
+
+  
+</p>
+
+
+<h2>Week 7 - Exercises</h2>
+<ul>
+    <li><a href="AjaxProject/ajax.html">Ajax Project</a></li>
+    <li><a href="https://jsfiddle.net/sreednic/mb374hot/11/">High Order Functions</a></li>
+    
+    
+    
+</ul>
+
+</body>
+</html>
