@@ -6,25 +6,95 @@
 </head>
 <body>
 <h1>WDD 330 - Portfolio</h1>
-<h2>Week 7 - Notes</h2>
-<h4></h4>
+<h2>Week 8 - Notes</h2>
+<h4>Transforms</h4>
 <p>
-    
+  using translate will move an object without effect the flow of the document<br><br>
+  Examples: transform: translate(x,y), translateX(45px), translateY(-30px)<br><br>
+  don't work on inline objects use inline-block to fix<br><br>
+  similar functions for scaling, providing one value is the same as the same value for <br><br>
+  using on inline could cause crowding issues<br><br>
+Other transforms include rotate() rotates around the origin in the direction of the sign<br><br>
+Skew takes two values for x and y axis<br><br>
+Origin defaults to center but can be changed<br><br>
+the order of your transforms matters<br><br>
+</p>
+<h4>Transitions</h4>
+<p>
+CSS animations require less processing than JS and therefore are smoother<br><br>
+transition-property defines the the CSS property that should be transitioned<br><br>
+Only properties with a midpoint can be transitioned <br><br>
+transition-duration sets how long the transition takes <br><br>
+200ms is considered optimal <br><br>
+transition-timing-function allows you to control the pace some values include ease liner ease-in ease-out <br><br>
+transition-delay set a delay on the transition<br><br>
+transition will shorthand all of these properties for us can be in any order but duration must be before delay<br><br>
+you can have many transitions in one use csv<br><br>
+</p>
+<h4>Animations</h4>
+<p>
+animation allows for more control of intermediate states with keyframes<br><br>
+to declare keyframe use @keyframe then space and name the keyframe<br><br>
+keyframes use percentages to declare the state of the animation at given percentage through the animation<br><br>
+animation need animation-name, animation-duration <br><br>
+values use for transition timing functions can also be used for animation timing functions<br><br>
+animation-iteration-count defines how many times the animation will play<br><br>
+you reverse animation with animation-direction <br><br>
+animation delay is same as transition animation <br><br>
+there is also an animation shorthand <br><br>
+
 </p>
 
-
-<h2>Week 7 - Questions</h2>
+<h4>Canvas</h4>
 <p>
-  
-</p>
-
-
-<h2>Week 7 - Exercises</h2>
+Steps to create canvas element
+</P>
 <ul>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    
+<li>add canvas tags to document</li>
+<li>add id to grab in js</li>
+<li> set width and height in html not with css</li>
+<li>grab canvas in the js from the document </li>
+<li>getContext("2d")</li>
+<li>set  the stroke and the fill</li>
+<li>begin drawing</li>
+</ul>
+<p>
+to draw a rectangle use fillRect and StrokeRect and defining its position from the top left corner<br><br>
+instead of a color we could have used CanvasPattern or CanvasGradient<br><br>
+for shapes other than rectangles you must first layout the path<br><br>
+signature for arc arc(x, y, radius, startAngle, endAngle, anticlockwise)<br><br>
+after creating the path close path and call fill and stroke to finish shape<br><br>
+you can draw img onto the canvas and manipulate them i.e change to black and white<br><br>
+you can also manipulate video with canvas <br><br>
+you can get around security error with try catch<br><br>
+you can add text with CAnvas as well but is invisible to screen readers<br><br>
+</p>
+<h4>SVG</h4>
+<p>
+SVG keep there quality even if you blow them up <br><br>
+shapes are easier to draw in svg than<br><br>
+use svg tags then shape tag inside those and set various properties<br><br>
+for complex shapes you can use an SVG editor<br><br>
+</p>
+<h4>Drag and Drop</h4>
+<p>
+to make draggable add draggable attribute to html element<br><br>
+add event listener to draggable element <br><br>
+add event listener for dragover and drop events<br><br>
+</p>
+
+<h2>Week 8 - Questions</h2>
+<p>
+  Is canvas widely used? It seems like a cumbersome way to draw things.<br><br>
+  Is there editors for Canvas like there is for SVG?
+</p>
+
+
+<h2>Week 8 - Exercises</h2>
+<ul>
+    <li><a href="https://codepen.io/sreednic/pen/oNLPaXq">Animations</a></li>
+    <li><a href="https://codepen.io/sreednic/pen/JjKaebV">Canvas</a></li>
+   
     
 </ul>
 
