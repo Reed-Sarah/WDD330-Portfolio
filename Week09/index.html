@@ -6,24 +6,61 @@
 </head>
 <body>
 <h1>WDD 330 - Portfolio</h1>
-<h2>Week 7 - Notes</h2>
-<h4></h4>
+<h2>Week 9 - Notes</h2>
+<h4>The Window Object</h4>
 <p>
-    
+    functions and methods created in the global scope belong to the window object <br><br>
+    BOM - (Browser Object Model) contains info about browser and screen <br><br>
+    global variables are created without const, let or var <br><br>
+    alert, confirm, prompt are all methods of the window object <br><br>
+    window.location.href returns the URL and can be used to change it<br><br>
+    window.history used to access info about previously visited pages<br><br>
+    window.open opens a new window with provided URL<br><br>
+    window.screen provides information about screen size<br><br>
+    document.write() will rewrite page to string passed in but should rarely if ever be used<br><br>
+    cookies can only be read by the domain that set them<br><br>
+    use document.cookie to append name values to the end of the cookie<br><br>
+    cookies are deleted at the end of the session by default, but you can add expires=date to make them last longer<br><br>
+    window.setTimeout() accepts a function and  number of milliseconds used for scheduling execution <br><br>
+    window.setInterval() is similar but repeats call to function after each time interval passed in <br><br>
+</p>
+
+<h4>HTML 5 APIs</h4>
+<p>
+    data- allows you to embed data into a webpage with custom attributes<br><br>
+    access the attribute with dataset.whateveryouputafterthehypen <br><br>
+    use localStorage.setItem() to set name value pair<br><br>
+    localStorage.getItem to retrieve value passing in a name you can also use dot notation<br><br>
+    localStorage.removeItem to remove also can use delete operator<br><br>
+    localStorage.clear() removes everything stored into local localStorage<br><br>
+    geolocation API obtains the geographical location of the device user must grant access<br><br>
+    is a property of the navigator object <br><br>
+    getCurrentPosition will return a position object which can be used to find, speed, altitude, heading (direction device is heading), and a timestamp<br><br>
+    watchPosition will call a callback every time position is updated<br><br>
+    web workers allow for concurrency JS<br><br>
+    use Worker constructor to use <br><br>
+    Websocket allows two way communication with the server i.e chats <br><br>
+    Notification API allows you to show messages using the system's notifications need permission from user<br><br>
+    Audio and video tags can be used with src attributes to play sounds<br><br>
+    can be referenced in js using getElementbyTagName .play will start or resume video .pause will pause video<br><br>
+    Shims and Polyfills are libraries that fill in the missing code when using APIs that are not supported<br><br>
 </p>
 
 
-<h2>Week 7 - Questions</h2>
+<h2>Week 9 - Questions</h2>
 <p>
-  
+  Is using global variables in JS always bad practice?<br><br>
+  Are cookies being phased out by local Storage?<br><br>
+  When are the acceptable circumstances to use document.Write?<br><br>
+  What other uses for websocket are there besides chats?<br><br>
 </p>
 
 
-<h2>Week 7 - Exercises</h2>
+<h2>Week 9 - Exercises</h2>
 <ul>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
+    <li><a href="factors.html">Web Workers</a></li>
+    <li><a href="https://codepen.io/sreednic/pen/pobGwGR">Window Object</a></li>
+    <li><a href="https://codepen.io/sreednic/pen/RwRvMzm">Geolocation</a></li>
     
     
 </ul>
