@@ -6,26 +6,49 @@
 </head>
 <body>
 <h1>WDD 330 - Portfolio</h1>
-<h2>Week 7 - Notes</h2>
-<h4></h4>
+<h2>Week 10 - Notes</h2>
+<h4>Client Side Validation</h4>
 <p>
-    
+    most validation can be done with HTML5s build in validation<br><br>
+    JS validation can be used to have more control over the look and feel of the errors and also languages<br><br>
+    constraint validation API contains methods and properties for buttons, fieldsets, inputs, outputs, select, and textarea <br><br>
+    this API also allows you to set custom error messages with setCustomValidity(message)<br><br>
+for legacy support you may have to build the validation on your own<br><br>
+</p>
+<h4>Fetch</h4>
+<p>
+    fetch is a better alternative to XMLHttpRequest<br><br>
+    fetch returns a promise, an HTTP response not the JSON<br><br>
+    use json() to extract JSON content<br><br>
+    fetch can optionally take an init object as a parameter to pass credentials<br><br>
+    fetch will also allow for user file upload<br><br>
+    instead of passing file path to fetch you can pass Request object<br><br>
+    Request() takes same parameters as fetch including request object <br><br>
+    the response promise returned by fetch as some useful properties .status .ok .statusText <br><br>
+
 </p>
 
 
-<h2>Week 7 - Questions</h2>
+<h2>Week 10 - Questions</h2>
 <p>
+    Is there any reason to still use XMLHttpRequest?<br><br>
+    Do most websites use custom Validation with JS?<br><br>
   
 </p>
 
 
-<h2>Week 7 - Exercises</h2>
+<h2>Week 10 - Exercises</h2>
 <ul>
-    <li><a href="factors.html"></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
+    <li><a href="https://codepen.io/sreednic/pen/abZgGvm">JS Validation</a></li>
+    <li><a href="fetch.html">Fetch</a></li>
     
     
+    
+</ul>
+<h2>Week 10 - Team Activity</h2>
+<ul>
+    <li><a href="earthquake/earthquakeWatch.html">Earthquakes</a>
+</li>
 </ul>
 
 </body>

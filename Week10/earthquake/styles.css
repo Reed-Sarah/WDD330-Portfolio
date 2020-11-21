@@ -1,0 +1,9 @@
+ul {
+    list-style: none;
+    margin-right: 5em;
+}
+
+.quakesList{
+    padding:1em;
+    border-bottom: solid 1px;
+}

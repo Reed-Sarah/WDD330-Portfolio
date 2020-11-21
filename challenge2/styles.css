@@ -1,0 +1,21 @@
+.hangman {
+    width: 75vh;
+    margin: 0 auto;
+}
+
+#scripture {
+    margin-top: -2em;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+} 
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.bodyPart {
+    display: none;
+}
