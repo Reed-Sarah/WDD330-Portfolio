@@ -1,16 +1,16 @@
-import { displayBoard, displayBodyPart} from './hangmanView.js';
+import { displayBoard, displayBodyPart, displayWrongLetters, displayLoseDialog, displayAlreadyUsedDialog, displayInvalidDialog, displayWinDialog} from './hangmanView.js';
 
 export default class Hangman {
     constructor() {
 this.summary =  [];
+this.reference = [];
 this.usedLetters = [];
 this.board = [];
-this.mistakes = -1;
+this.mistakes = 0;
     }
 
 
    getScriptures() {
-       
         fetch('scriptures.json')
         .then(response => response.json())
         .then(scriptures => {
@@ -18,12 +18,12 @@ this.mistakes = -1;
             console.log(scriptures);
             this.buildBoard(scriptures);
         });
-    
     }
+
     buildBoard(scriptures){
-        
         let rand = Math.floor(Math.random() * scriptures.scriptures.length);
         this.summary = scriptures.scriptures[rand].summary;
+        this.reference = scriptures.scriptures[rand].reference;
         console.log(this.summary);
         for (let i = 0; i < this.summary.length; i++){
             if (this.summary[i].match(/[a-z]/i)){
@@ -37,12 +37,10 @@ this.mistakes = -1;
     }
     
     checkLetter(e) {
-        console.log(this.usedLetters)
-
-    console.log(e.key);
-    console.log(this.board);
+        console.log(e.keyCode);
+        if (e.keyCode >= 65 && e.keyCode <= 90) {
     if (this.usedLetters.includes(e.key)){
-    alert("you've already guessed this letter silly!")
+        displayAlreadyUsedDialog()
     }
     else {
         this.usedLetters.push(e.key);
@@ -53,16 +51,32 @@ this.mistakes = -1;
                 this.board[i] = this.summary[i];
                 displayBoard(this.board);
                 match = true;
+                if (!this.board.includes("_")){
+                    displayWinDialog(this.mistakes);
+                }
             }
         }
         if (!match){
              this.mistakes += 1;
-                displayBodyPart(this.mistakes);
+             displayBodyPart(this.mistakes);
+             if (this.mistakes >=6){
+               displayLoseDialog() ;
+             }
+             else{
+              displayWrongLetters(e.key.toUpperCase());
+                   
+             }
         }
     }
-    console.log(this.board);
+}
+else{
+    displayInvalidDialog();
+}
     }
 
+    getHint(){
+        return this.reference;
+    }
     
 
 }

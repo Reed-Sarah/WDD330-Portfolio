@@ -8,6 +8,8 @@
 </head>
 <body>
     <main>
+        <h1>Scripture Hangman</h1>
+        <div class="container">
         <div class="hangman">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 100 100;" xml:space="preserve">
@@ -20,17 +22,27 @@
      <path class="bodyPart" id="rightLeg" d="M 74.497 74.051 L 70.497 74.051 L 72.497 77.851 L 80.997 88.051 C 81.397 88.551 81.997 88.751 82.497 88.751 C 82.997 88.751 83.397 88.551 83.797 88.251 C 84.597 87.551 84.797 86.251 84.097 85.451 L 74.497 74.051 Z"/>
 </svg> 
 </div>
+<div class="letters">
+    <h3>Guessed Letters:</h3>
+<div id="wrongLetters"></div>
+<button id="hint">Hint</button>
+</div>
+</div>
 <div id="scripture"></div>
+
     </main>
 <footer>
  <a target="_blank" href="https://www.iconbros.com/icons/ib-g-hangman">Hangman</a> icon by <a target="_blank" href="https://iconbros.com">IconBros</a>
    
 </footer>
 <script src="main.js" type="module"></script>
-<dialog id="alreadyUsedLetter"></dialog>
-<dialog id="invalid"></dialog>
-<dialog id="hint"></dialog>
-<dialog id="lose"></dialog>
-<dialog id="win"></dialog>
+<dialog id="alreadyUsedLetter"><h2>Invalid Entry</h2><h3>You already guessed that letter silly!</h3></dialog>
+<dialog id="invalid"><h2>Invalid Entry</h2><h3>You must enter a letter.</h3></dialog>
+<dialog id="reference"><h2>Hint</h2><h3 id="ref"></h3> </dialog>
+<dialog id="lose"><h2>I'm sorry you didn't guess it!</h2><h3>Would you like to try again?</h3>
+    <button id="playAgain">Try Again</button></dialog>
+</dialog>
+<dialog id="win"><h2>Congratulations!</h2> <h3>You guessed the correct phrase with <span id="guesses"></span> guesses remaining!</h3>
+    <button id="playAgain">Try Again</button></dialog>
 </body>
 </html>
