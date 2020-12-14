@@ -6,6 +6,11 @@ html {
     padding: 0  1em 1em 1em;
 }
 
+#inputContainer {
+    width: 0;
+    overflow: hidden;
+}
+
 dialog {
     border: none;
     background-color:#326273 ;
@@ -26,38 +31,41 @@ dialog h2 {
 
 #wrongLetters {
     border-style: dotted;
-    padding: 1em;
-    width: 14vw;
-    height: 23px;
-    margin: 0 3em 1em 0;
+    padding: .25em;
+    width: 65px;
+    height: 17px;
+    margin: 0 2em 1em 0;
 }
 
 .letters h3 {
-margin-bottom: .25em;
+margin: 0 0 .25em 0;
+font-size: 90%;
 }
+
 svg {
     fill:white;
+    
 }
 
 .container {
     display: flex;
 }
 .hangman {
-    width: 75vh;
-    margin: 0 0 0 35vw;
+    width: 70vh;
+    margin: 0 0 0 15vw;
 }
 
 #scripture {
-    margin-top: -2em;
+    margin-top: -1.5em;
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing: 5px;
     word-spacing: 20px;
 } 
 h1 {
     text-align: center;
     font-family: 'Unkempt', cursive;
-    font-size: 350%;
+    font-size: 250%;
     margin-top: 0em;
 }
 
@@ -79,3 +87,47 @@ dialog {
     a {
         color: white;
     }
+
+
+     @media screen and (min-width: 650px) {
+        #scripture {
+            margin-top: -2.5em;
+            font-size: 2rem;
+        } 
+        h1 {
+            font-size: 350%;
+        }
+        .hangman {
+            width: 70vh;
+            margin: 0 0 0 35vw;
+        }
+        #wrongLetters {
+            padding: 1em;
+            width: 14vw;
+            height: 23px;
+            margin: 0 3em 1em 0;
+        }
+        .letters h3 {
+            margin-top: unset;
+            font-size: 120%;
+            }
+      } 
+    @media screen and (min-width: 900px) {
+        #scripture {
+            margin-top: -2.5em;
+            font-size: 3rem;
+        } 
+        h1 {
+            font-size: 350%;
+        }
+        .hangman {
+            width: 70vh;
+            margin: 0 0 0 35vw;
+        }
+
+      }
+    @media screen and (min-width: 1200px) {
+        #scripture {
+            font-size: 4.5rem;
+        } 
+      }

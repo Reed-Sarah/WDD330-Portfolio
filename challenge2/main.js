@@ -3,6 +3,8 @@ import {displayReference} from './hangmanView.js'
 let hangman = new Hangman;
 hangman.getScriptures();
 window.addEventListener("keydown", callCheckLetter);
+let hiddenInput = document.getElementById("hidden");
+hiddenInput.focus();
 
 let tryAgain = document.getElementById("playAgain");
 tryAgain.addEventListener("click", playAgain); 
