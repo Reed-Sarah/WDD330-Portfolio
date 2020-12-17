@@ -23,7 +23,6 @@ this.mistakes = 0;
         let rand = Math.floor(Math.random() * scriptures.scriptures.length);
         this.summary = scriptures.scriptures[rand].summary;
         this.reference = scriptures.scriptures[rand].reference;
-        console.log(this.summary);
         for (let i = 0; i < this.summary.length; i++){
             if (this.summary[i].match(/[a-z]/i)){
                 this.board.push("_");
@@ -36,7 +35,6 @@ this.mistakes = 0;
     }
     
     checkLetter(e) {
-        console.log(e.keyCode);
         if (e.keyCode >= 65 && e.keyCode <= 90) {
     if (this.usedLetters.includes(e.key)){
         displayAlreadyUsedDialog()

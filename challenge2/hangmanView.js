@@ -11,7 +11,6 @@ for (space of board){
 
 export function displayBodyPart(mistakes){
     let bodyParts = document.querySelectorAll(".bodyPart");
-    console.log(mistakes)
     bodyParts[mistakes - 1].style.display = "block";
 }
 
